@@ -91,7 +91,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: calc(var(--index)*2.3);
     background-color: #EFEADF;
     height: calc(var(--index)*2.3);
     width: calc(var(--index)*58);
@@ -175,15 +175,18 @@ header {
 .about_us {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: calc(var(--index)*4);
     color: #4E3436;
     background-color: #EEEADF;
     width: calc(var(--index)*58);
     height: calc(var(--index)*7);
     align-items: center;
 }
-.about_us h4 {
+.about_us h3 {
     font-size: calc(var(--index)*0.75);
+}
+.about_us h4 {
+    font-size: calc(var(--index)*0.5);
 }
 /* категории */
 .categories {
@@ -239,6 +242,7 @@ header {
     background-color: #201213;
     color: #d3cecb;
     padding-left: calc(var(--index));
+    font-size: calc(var(--index));
 }
 .subscribe_bar button {
     width: calc(var(--index)*10);
